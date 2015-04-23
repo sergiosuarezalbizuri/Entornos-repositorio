@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_cYYbULKLEeSEz86WuGAvcw" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_mLO1cLKLEeSEz86WuGAvcw" name="Persona ">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_UgCUILKNEeSEz86WuGAvcw" name="Edad"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cifHoLKNEeSEz86WuGAvcw" name="Edad"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qrS1YLKNEeSEz86WuGAvcw" name="Mostrar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8ryRQLKLEeSEz86WuGAvcw" name="Empleado">
+    <generalization xmi:type="uml:Generalization" xmi:id="_rmO-MLKOEeSEz86WuGAvcw" general="_mLO1cLKLEeSEz86WuGAvcw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0VS1gLKNEeSEz86WuGAvcw" name="Sueldo_Bruto"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__9CfQLKOEeSEz86WuGAvcw" name="directivo" type="_B4LdoLKMEeSEz86WuGAvcw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__9MQQLKOEeSEz86WuGAvcw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__9MQQbKOEeSEz86WuGAvcw" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3x7UcLKNEeSEz86WuGAvcw" name="Mostrar()"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_56p7gLKNEeSEz86WuGAvcw" name="Calcular_salario_neto()"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AROG4LKMEeSEz86WuGAvcw" name="Cliente ">
+    <generalization xmi:type="uml:Generalization" xmi:id="_q0ibgLKOEeSEz86WuGAvcw" general="_mLO1cLKLEeSEz86WuGAvcw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Co2asLKOEeSEz86WuGAvcw" name="Telefono _de _Contacto"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FyJG4LKOEeSEz86WuGAvcw" name="Mostrar()"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_B4LdoLKMEeSEz86WuGAvcw" name="Directivo">
+    <generalization xmi:type="uml:Generalization" xmi:id="_tSr48LKOEeSEz86WuGAvcw" general="_8ryRQLKLEeSEz86WuGAvcw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NYB6MLKOEeSEz86WuGAvcw" name="categoria"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_P3XqcLKOEeSEz86WuGAvcw" name="Mostrar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FFDpULKMEeSEz86WuGAvcw" name="Empresa">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_T3tTYLKOEeSEz86WuGAvcw" name="Nombre"/>
+  </packagedElement>
+</uml:Model>
